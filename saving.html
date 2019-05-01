@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+        <title> All-in-One Finances </title>
+
+    </head>
+
+    <body>
+      <nav class="navbar navbar-light navbar-expand-sm fixed-top">
+          <div class="container">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a> -->
+              <div class="collapse navbar-collapse" id="Navbar">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item"><a class="nav-link" href="#./index.html">Home</a></li>
+                     <li class="nav-item"><a class="nav-link" href="./accounts.html">Accounts</a></li>
+                     <li class="nav-item"><a class="nav-link" href="./budget.html">Budgeting</a></li>
+                     <li class="nav-item active"><a class="nav-link" href="#">Saving</a></li>
+                     <li class="nav-item"><a class="nav-link" href="./expenses.html">Expenses</a></li>
+                  </ul>
+                  <span class="navbar-text">
+                      <span class="fa fa-sign-in" id="loginButton"></span> Login</a>
+                  </span>
+              </div>
+          </div>
+      </nav>
+
+      <header class = "jumbotron">
+          <div class = "container">
+              <div class="row row-header">
+                  <div class = "col-12 col-sm-6">
+                      <h1>All-in-One Finances</h1>
+                      <p>This is a web application to help you manage your finances all in one place and improve your financial practices.</p>
+                  </div>
+                  <div class="col-12 col-sm-3 align-self-center">
+                    <button class="btn btn-primary text-white"> Add New Category</button>
+                  </div>
+              </div>
+          </div>
+      </header>
+
+      <div class="container">
+        <!-- <h1>This is a Header</h1>
+        <p>This is a paragraph</p>
+        <p>This is a second paragraph</p> -->
+        <div class="row row-content justify-content-center">
+            <div id="accordion" class=col-12>
+              <div class="card">
+                <div class="card-header" id="headingOne">
+
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Emergency Fund
+                    </button>
+                  </h5>
+
+
+                </div>
+
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <h6 class="col-2 order-last">
+                    $saved of $total
+                  </h6>
+                  <div class="card-body">
+                    Will show recent transfers to savings that fall under this category.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      New Car
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <h6 class="col-2 order-last">
+                    $saved of $total
+                  </h6>
+                  <div class="card-body">
+                    Will show recent transfers to savings that fall under this category.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Vacation Next Year
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <h6 class="col-2 order-last">
+                    $saved of $total
+                  </h6>
+                  <div class="card-body">
+                    Will show recent transfers to savings that fall under this category.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
