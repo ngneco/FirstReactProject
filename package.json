@@ -31,6 +31,7 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-filerev": "^2.3.1",
     "grunt-sass": "^2.1.0",
+    "grunt-surge": "^0.7.0",
     "grunt-usemin": "^3.1.1",
     "jit-grunt": "^0.10.0",
     "lite-server": "^2.4.0",

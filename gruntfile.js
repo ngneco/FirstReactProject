@@ -84,7 +84,7 @@ module.exports = function (grunt) {
         useminPrepare: {
             foo: {
                 dest: 'dist',
-                src: ['contactus.html','aboutus.html','index.html']
+                src: ['accounts.html','budget.html','expenses.html','index.html','saving.html']
             },
             options: {
                 flow: {
@@ -152,7 +152,7 @@ module.exports = function (grunt) {
         // options.assetDirs contains the directories for finding the assets
         // according to their relative paths
         usemin: {
-            html: ['dist/contactus.html','dist/aboutus.html','dist/index.html'],
+            html: ['dist/accounts.html','dist/budget.html','dist/expenses.html','dist/index.html','dist/saving.html'],
             options: {
                 assetsDirs: ['dist', 'dist/css','dist/js']
             }
@@ -169,7 +169,19 @@ module.exports = function (grunt) {
                     'dist/aboutus.html': 'dist/aboutus.html',
                 }
             }
+        },
+
+        //Trying to deploy my website
+        surge: {
+        'Your Project Name': {
+          options: {
+            // The path or directory to your compiled project
+            project: 'Coursera/FirstProject/',
+            // The domain or subdomain to deploy to
+            domain: 'devilish-dust.surge.sh'
+          }
         }
+      }
   });
 
   grunt.registerTask('css', ['sass']);
@@ -184,6 +196,7 @@ module.exports = function (grunt) {
         'uglify',
         'filerev',
         'usemin',
-        'htmlmin'
+        'htmlmin',
+        'surge'
     ]);
 };
